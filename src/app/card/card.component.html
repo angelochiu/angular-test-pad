@@ -1,1 +1,8 @@
-<p>card works!</p>
+<div *ngIf='elevatedUserView'>
+    <button class="buttonUpdate" mat-flat-button color="primary" (click)="updateStatus()">{{buttonText}}</button>
+</div>
+<div>
+    <mat-card>
+        Simple card
+    </mat-card>
+</div>
