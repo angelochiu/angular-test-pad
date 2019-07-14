@@ -1,4 +1,12 @@
 .buttonUpdate {
+    float: right;
     background-color: mediumaquamarine;
     color: mintcream;
+}
+
+.simple-card {
+    margin: 10px;
+    padding: 10px;    
+    max-width: 80%;
+    background: mintcream;
 }

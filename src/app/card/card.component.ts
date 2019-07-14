@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   elevatedUserView: boolean;
+  enabled: boolean;
   @Input()
   cardId: string;
   frequency: string;
@@ -16,6 +17,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
     this.elevatedUserView = true;
+    this.enabled = true;
     this.buttonText ="Hide";
   }
 
@@ -25,7 +27,7 @@ export class CardComponent implements OnInit {
     } else {
       this.buttonText = 'Hide';
     }
-    
+    this.enabled = !this.enabled;
   }
 
 }

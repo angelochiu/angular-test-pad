@@ -1,8 +1,13 @@
-<div *ngIf='elevatedUserView'>
-    <button class="buttonUpdate" mat-flat-button color="primary" (click)="updateStatus()">{{buttonText}}</button>
+<div *ngIf="elevatedUserView">
+    <button class="buttonUpdate" mat-flat-button color="primary" (click)="updateStatus()">
+        {{buttonText}}
+    </button>
 </div>
 <div>
-    <mat-card>
-        Simple card
+    <mat-card class="simple-card" 
+        [ngStyle]="{'background': enabled ? 'mintcream' : 'grey'}"
+        id = {{cardId}}
+    >
+        {{cardId}} : Simple card sample
     </mat-card>
 </div>
